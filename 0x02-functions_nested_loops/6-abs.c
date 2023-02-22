@@ -2,10 +2,11 @@
 
 /**
  * _abs - check the code
- * @i: declared character
+ * @n: declared character
  * Return: Always 0.
  */
-int _abs(int)
+
+int _abs(int n)
 {
   return (n >= 0 ? n : -n);
 }
