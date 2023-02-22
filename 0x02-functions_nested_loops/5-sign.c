@@ -2,12 +2,9 @@
 
 /**
  * print_sign - check the code
- * @i: declared integer
- * Return: 1 if is greater than zero
- * Return: -1 if is less than zero
- * Return: 0 if is zero
+ * @n: declared integer
+ * Return: 1 or -1 or 0
  */
-
 
 int print_sign(int n)
 {
@@ -23,7 +20,7 @@ return (-1);
 }
 else
 {
-_putchar('0');     
+_putchar('0'); 
 return (0);
 }
 }
