@@ -1,8 +1,8 @@
 #include "main.h"
 
- /**
- * print_alphabet: desc
- */
+/**
+* print_alphabet - prints the alphabet, in lowercase
+*/
 void print_alphabet(void)
 {
 char i = 'a';
