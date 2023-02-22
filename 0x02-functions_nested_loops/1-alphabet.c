@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-* _putchar - writes the character c to stdout
+* print_alphabet a function that prints the alphabet, in lowercase, followed by a new line.
 * @c: The character to print
 *
 * Return: On success 1.
