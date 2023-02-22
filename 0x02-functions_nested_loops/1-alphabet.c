@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * _putchar - writes the character c to stdout
  * @c: The character to print
@@ -11,6 +12,6 @@ void print_alphabet(void)
 {
 char i= 'a';
 for ( i ='a'; i <='z'; i++)
-putchar(i);
-putchar('\n');
+_putchar(i);
+_putchar('\n');
 }
