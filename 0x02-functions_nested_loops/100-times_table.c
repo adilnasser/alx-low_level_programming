@@ -20,7 +20,7 @@ _putchar(' ');
 p = n * m;
 if (p <= 99)
 {
- _putchar(' ');
+_putchar(' ');
 }
 if (p <= 9)
 {
