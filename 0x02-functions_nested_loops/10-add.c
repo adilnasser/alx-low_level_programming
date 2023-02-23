@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- *add - check the code
+ * add - check the code
  * @a: declared character
  * @b: declared character
- * Return : int
+ * Return: int
  */
 
 int add(int a, int b)
