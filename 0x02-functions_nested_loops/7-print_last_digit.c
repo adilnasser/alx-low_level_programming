@@ -5,7 +5,10 @@
  * @n: declared character
  * Return: last Digit 
  */
+
 int print_last_digit(int n)
 {
-return _abs(n%10);
+int last_digit = (n >= 0 ? n : -n);
+last_digit = last_digit % 10 ;
+return (last_digit);
 }
