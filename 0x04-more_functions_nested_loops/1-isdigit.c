@@ -1,10 +1,11 @@
 #include "main.h"
 
 /**
- * 1-isdigit -function that checks for upperecase  character
- *@c: the character
- *Return: 1 if the upperecase  is found
+ * _isdigit - checks if parameter is a number between 0 to 9.
+ * @c: input number.
+ * Return: 1 if is a number (0 to 9), 0 in other case.
  */
+
 int _isdigit(int c)
 {
 	if (c >= 48 && c <= 57)
