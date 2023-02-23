@@ -1,8 +1,9 @@
 #include "main.h"
 
 /**
- * add - check the code
- * Return: Always 0.
+ * @a: declared character
+ * @b: declared character
+ * Return : int 
  */
 int add(int a, int b)
 {
