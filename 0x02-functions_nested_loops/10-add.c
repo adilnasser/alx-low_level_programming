@@ -3,9 +3,9 @@
 /**
  * @a: declared character
  * @b: declared character
- * Return : int 
+ * Return : int
  */
 int add(int a, int b)
 {
-return (a+b);
+return (a + b);
 }
