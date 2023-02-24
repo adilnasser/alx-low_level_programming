@@ -5,6 +5,7 @@
  * @n :number
  * Return: no return.
  */
+
 void print_line(int n)
 {
 	if (n == 0 || n < 0)
@@ -14,6 +15,7 @@ void print_line(int n)
 	else
 	{
 		int i = n;
+
 		for (i = 0; i < n; i++)
 		{
 			_putchar('_');
