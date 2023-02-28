@@ -19,7 +19,7 @@ void rev_string(char *s)
 		length_Of_String++;
 	}
 
-	char swap[length_Of_String] = {};
+	char swap[length_Of_String];
 
 	for (i = 0 ; i < length_Of_String ; i++)
 	{
