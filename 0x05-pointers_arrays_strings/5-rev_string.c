@@ -8,30 +8,24 @@
 
 void rev_string(char *s)
 {
-	int length_Of_String = 0;
+	int length_Of_Stringgth_Of_String = 0;
 
 	int i = 0;
 
-	int j = 0;
+	char temp;
 
-	while (s[length_Of_String] != '\0')
+	while (s[length_Of_Stringgth_Of_String] != '\0')
 	{
-		length_Of_String++;
+		length_Of_Stringgth_Of_String++;
 	}
 
-	char swap[length_Of_String] = "Hello";
 
-	for (i = 0 ; i < length_Of_String ; i++)
-	{
-		swap[i] = s[i];
-	}
 
-	for (i = 0 ; i < length_Of_String ; i++)
+	for (i = 0; i < length_Of_String / 2; i++)
 	{
-		for (j = length_Of_String - 1 ; j >= 0  ; i--)
-		{
-			s[i] = swap[j];
-		}
+		temp = *(s + i);
+		*(s + i) = *(s + length_Of_String - i - 1);
+		*(s + length_Of_String - i - 1) = temp;
 	}
 
 
