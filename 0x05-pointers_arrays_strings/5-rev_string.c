@@ -28,6 +28,4 @@ void rev_string(char *s)
 		*(s + length_Of_String - i - 1) = temp;
 	}
 
-
-	_putchar('\n');
 }
