@@ -8,11 +8,16 @@
 
 void print_rev(char *s)
 {
+	int length_Of_String = 0;
+
 	int i = 0;
 
-	int length_Of_String = _strlen(s);
+	while (s[length_Of_String] != '\0')
+	{
+		length_Of_String++;
+	}
 
-	for (i = length_Of_String - 1 ; i <= 0 ; i--)
+	for (i = length_Of_String - 1 ; i >= 0 ; i--)
 	{
 		_putchar(s[i]);
 	}
