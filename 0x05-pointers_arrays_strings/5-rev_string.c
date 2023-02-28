@@ -8,15 +8,15 @@
 
 void rev_string(char *s)
 {
-	int length_Of_Stringgth_Of_String = 0;
+	int length_Of_String = 0;
 
 	int i = 0;
 
 	char temp;
 
-	while (s[length_Of_Stringgth_Of_String] != '\0')
+	while (s[length_Of_String] != '\0')
 	{
-		length_Of_Stringgth_Of_String++;
+		length_Of_String++;
 	}
 
 
