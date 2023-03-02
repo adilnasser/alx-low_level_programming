@@ -23,7 +23,7 @@ char *_strcat(char *dest, char *src)
 
 	while (src[lenghtsrc] != '\0')
 	{
-		lenghtsrc++;
+			    lenghtsrc++;
 	}
 
 	for (i = lenghtdest + 1; i <= lenghtdest + 1 ; i++)
@@ -34,5 +34,7 @@ char *_strcat(char *dest, char *src)
 			j++;
 		}
 	}
+	dest[lenghtdest + lenghtsrc] = '\0';
+
 	return (dest);
 }
