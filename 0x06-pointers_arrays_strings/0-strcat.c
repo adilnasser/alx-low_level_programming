@@ -9,7 +9,7 @@
  *         dest and src strings.
  */
 
-char *_strcat(char *dest, char *src)
+char* _strcat(char *dest, char *src)
 {
 
 	int lenghtdest = 0, lenghtsrc = 0;
