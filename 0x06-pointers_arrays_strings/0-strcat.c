@@ -9,7 +9,7 @@
  *         dest and src strings.
  */
 
-char* _strcat(char *dest, char *src)
+char *_strcat(char *dest, char *src)
 {
 
 	int lenghtdest = 0, lenghtsrc = 0;
@@ -26,7 +26,7 @@ char* _strcat(char *dest, char *src)
 			    lenghtsrc++;
 	}
 
-	for (i = lenghtdest + 1; i <= lenghtdest + 1 ; i++)
+	for (i = lenghtdest; i < lenghtdest + lenghtsrc; i++)
 	{
 		while (j < lenghtsrc)
 		{
@@ -34,7 +34,9 @@ char* _strcat(char *dest, char *src)
 			j++;
 		}
 	}
-	dest[lenghtdest + lenghtsrc] = '\0';
+
+
+	*(dest + lenghtdest + lenghtsrc) = '\0';
 
 	return (dest);
 }
