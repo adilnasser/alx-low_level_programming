@@ -6,17 +6,22 @@
  *
  * Return: pointer to resulting string
  */
+
 char *leet(char *s)
 {
+
 	char *ptr = s;
+
 	int i, j;
+
 	char letters[] = "aAeEoOtTlL";
+
 	char numbers[] = "4433007711";
 
 	while (*ptr)
 	{
 		i = 0;
-		while (letters[i])
+		while (letters[i] != '\0')
 		{
 			if (*ptr == letters[i])
 			{
