@@ -12,7 +12,7 @@ char *_strchr(char *s, char c)
 {
 	int i = 0;
 
-	char *Corrunced_char = NULL;
+	char *Corrunced_char;
 
 	while (s[i] != '\0')
 	{
