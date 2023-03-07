@@ -13,14 +13,11 @@ char *_strchr(char *s, char c)
 
 	char *Corrunced_char = '\0';
 
-	while (s[i] != '\0')
+
+	for (i = 0; s[i] != '\n'; i++)
 	{
 		if (s[i] == c)
-		{
-			Corrunced_char = &s[i];
-			return (Corrunced_char);
-		}
-		i++;
+		return (Corrunced_char + i);
 	}
-	return (Corrunced_char);
+		return (0);
 }
