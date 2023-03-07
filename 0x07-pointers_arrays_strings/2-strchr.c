@@ -19,7 +19,6 @@ char *_strchr(char *s, char c)
 		{
 			Corrunced_char = &s[i];
 			return (Corrunced_char);
-			break;
 		}
 		i++;
 	}
