@@ -14,12 +14,12 @@ while (s[i])
 if (s[i] == '\0')
 break;
 
-putchar(s[i]);
+_putchar(s[i]);
 
 i++;
 
 _puts_recursion(s[i]);
 }
 
-putchar('\n');
+_putchar('\n');
 }
