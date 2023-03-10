@@ -9,8 +9,6 @@
 int is_palindrome(char *s)
 {
 
-	int palindrome = 1;
-
 	int i = 0;
 
 	int len = 0;
@@ -21,9 +19,9 @@ int is_palindrome(char *s)
 	if (*s == '\0')
 	{
 	if (*s != *(s + len - i))
-		palindrome = 0;
+		return (0);
 	i++;
 	}
 
-	return (palindrome);
+	return (1);
 }
