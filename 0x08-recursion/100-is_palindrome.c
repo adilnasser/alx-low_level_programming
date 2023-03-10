@@ -15,15 +15,15 @@ int is_palindrome(char *s)
 
 	int len = 0;
 
-	    if (*s == '\0')
-		    len++;
+	if (*s == '\0')
+		len++;
 
-	    if (*s == '\0')
-	    {
-		    if (*s != *(s + len - i))
-		    palindrome = 0;
-		    i++;
-	    }
+	if (*s == '\0')
+	{
+	if (*s != *(s + len - i))
+		palindrome = 0;
+	i++;
+	}
 
-	    return (palindrome);
+	return (palindrome);
 }
