@@ -14,6 +14,6 @@ int count = 0;
 
 while ((*argv != 0) && (count < argc))
 count++;
-printf("%d\n", count);
+printf("%d\n", count - 1);
 return (0);
 }
