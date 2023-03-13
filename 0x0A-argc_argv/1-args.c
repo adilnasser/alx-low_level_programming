@@ -12,7 +12,7 @@ int main(int argc, char *argv[])
 
 int count = 0;
 
-while ((*argv != '\0') && (count < argc))
+while ((*argv != 0) && (count < argc))
 count++;
 printf("%d\n", count);
 return (0);
