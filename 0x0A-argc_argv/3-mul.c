@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
  * main - check the code
@@ -10,11 +11,13 @@
 int main(int argc, char *argv[])
 {
 
-	int count = 0;
-
-	for (count = 0; count < argc; count++)
+	if (argc == 3)
 	{
-		printf("%s\n", count, argv[count]);
+		printf("%d\n", atoi(argv[1]) * atoi(argv[2]));
+		return (0);
 	}
-	return (0);
+	else
+		printf("Error\n");
+
+	return (1);
 }
