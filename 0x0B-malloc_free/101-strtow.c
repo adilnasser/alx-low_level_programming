@@ -28,6 +28,7 @@ int count_words(char *str)
  * Return: A pointer to an array of strings (words)
  *         NULL if str == NULL or str == "" or if allocation fails
  */
+
 char **strtow(char *str)
 {
 	char **words;
@@ -57,6 +58,13 @@ char **strtow(char *str)
 
 		words[i] = malloc(sizeof(char) * (len + 1));
 
+		if (words[i] == NULL)
+		{
+			for (k = 0; k < i; k++)
+				free(words[k]);
+			free(words);
+			return (NULL);
+		}
 
 		for (k = 0; k < len; k++)
 			words[i][k] = str[j + k];
@@ -66,7 +74,7 @@ char **strtow(char *str)
 		j += len;
 	}
 
-	words[n_words] = "\0";
+	words[j] = "\0";
 
 	return (words);
 }
