@@ -17,28 +17,28 @@ int make_change(int cents)
 		if (cents % 25 != 0)
 		{
 			cents -= 25;
-			coins++;
+			coins = coins + (cents / 25);
 		}
 
 		else if (cents % 10 != 0)
 		{
 		cents -= 10;
-		coins++;
+		coins = coins + (cents / 10);
 		}
 
 		else if (cents % 5 != 0)
 		{
 		cents -= 5;
-		coins++;
+		coins = coins + (cents / 5);
 		}
 
 		else if (cents % 2 != 0)
 		{
 		cents -= 2;
-		coins++;
+		coins = coins + (cents / 2);
 		}
 
-		else  if (cents % 1 != 0)
+		else
 		{
 		cents -= 1;
 		coins++;
