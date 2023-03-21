@@ -8,36 +8,36 @@
  *
  * Return: The minimum number of coins.
  */
+
 int make_change(int cents)
 {
 	int coins = 0;
 
 	while (cents > 0)
 	{
-		if (cents % 25 != 0)
+		if (cents % 25 == 0)
 		{
 			cents -= 25;
 			coins = coins + (cents / 25);
 		}
 
-		else if (cents % 10 != 0)
+		else if (cents % 10 == 0)
 		{
-		cents -= 10;
-		coins = coins + (cents / 10);
+			cents -= 10;
+			coins += (cents / 10);
 		}
 
-		else if (cents % 5 != 0)
+		else if (cents % 5 == 0)
 		{
-		cents -= 5;
-		coins = coins + (cents / 5);
+			cents -= 5;
+			coins += (cents / 5);
 		}
 
-		else if (cents % 2 != 0)
+		else if (cents % 2 == 0)
 		{
 		cents -= 2;
-		coins = coins + (cents / 2);
+		coins += (cents / 2);
 		}
-
 		else
 		{
 		cents -= 1;
