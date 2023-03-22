@@ -1,6 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+/*the function prototype*/
+int coin_count(int cents);
+
 /**
 * main - Prints the minimum number of coins to make change for a given amount
 * of money.
@@ -10,7 +13,6 @@
 */
 
 
-int coin_count(int cents);
 
 int main(int argc, char **argv)
 {
