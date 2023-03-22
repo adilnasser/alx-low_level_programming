@@ -1,3 +1,4 @@
+#include <stddef.h>
 #include "dog.h"
 
 /**
@@ -10,6 +11,7 @@
  * Description: function that initializes a variable of type struct dog
  * Return: nothing (void)
  */
+
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
 	if (d != NULL)
