@@ -8,7 +8,7 @@
  *@owner: dog's owner
  *Description: struct called "dog" that defines basic info about a dog
 */
-typedef struct dog dog_t;
+
 
 struct dog
 {
@@ -16,6 +16,8 @@ struct dog
 	float age;
 	char *owner;
 };
+
+typedef struct dog dog_t;
 
 /* function prototype */
 void init_dog(struct dog *d, char *name, float age, char *owner);
