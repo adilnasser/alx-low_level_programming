@@ -8,6 +8,7 @@
  *@owner: dog's owner
  *Description: struct called "dog" that defines basic info about a dog
 */
+typedef struct dog dog_t;
 
 struct dog
 {
