@@ -8,7 +8,7 @@
  * @separator: const char
  * @n: const unsigned integer eqaul number of parameters
  * @...: A variable number of numbers to be printed.
- * 
+ *
  * Description: If separator is NULL, it is not printed.
  * If one of the strings if NULL, (nil) is printed instead.
  */
@@ -23,17 +23,16 @@ void print_strings(const char *separator, const unsigned int n, ...)
 
 	for (i = 0; i < n; i++)
 	{
+		str = va_arg(list, char *);
 
-		if (i == n - 1)
-			printf("%s", va_arg(list, char *));
-
-		else if (separator != NULL)
-			printf("%s%s", va_arg(list, char *), separator);
-
-		else if ((str = va_arg(list, char *)) == NULL)
+		if (str == NULL)
 			printf("(nil)");
+
 		else
-			printf("%s", va_arg(list, char *));
+			printf("%s", str);
+
+		if (i != (n - 1) && separator != NULL)
+			printf("%s", separator);
 	}
 
 	printf("\n");
