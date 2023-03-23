@@ -8,8 +8,8 @@
  * print_numbers - function that returns the sum of all its parameters.
  * @separator: const char
  * @n: const unsigned integer eqaul number of parameters
- * Return: returns the sum of all its parameters
- *          or 0 if n equals 0
+ * @...: A variable number of numbers to be printed.
+ * Return: returns the sum of all its parameters or 0 if n equals 0
  */
 
 void print_numbers(const char *separator, const unsigned int n, ...)
