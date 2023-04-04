@@ -5,6 +5,7 @@
 /**
  * add_nodeint_end- adds a new node at the end of a listint_t list..
  * @head: pointer to the head of the list.
+ * @n: integer
  * Return: pointer to the new node, or NULL on failure.
  */
 
